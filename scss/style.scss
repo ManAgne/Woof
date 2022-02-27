@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Prompt&family=Roboto&family=Source+Sans+Pro&display=swap');
+
+body {
+    background: url(https://images.unsplash.com/photo-1418065514041-ace6539f65cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 110vh;
+    background-position-x: center; 
+    background-position: center;
+    background-color: white;
+    color: white;
+    text-align: center;
+    font-family: prompt;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    font-size: 35px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.438);
+}
+
+.buttons {
+    width: 100%;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    button {
+    width: 33%;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: rgba(7, 62, 87, 0.747);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px rgba(6, 34, 43, 0.438);
+    font-size: 20px;
+    transition: 0.3s;
+    font-family: prompt;
+     
+
+        &:hover {
+        cursor: pointer;
+        background: radial-gradient(circle, rgba(196, 234, 252, 0.603) 2%, rgba(9, 30, 39, 0.322) 100%);
+        color: black;
+        font-size: 22px;
+        border: none;
+        box-shadow: rgba(7, 62, 87, 0.4) 0px 5px, rgba(7, 62, 87, 0.3) 0px 10px, rgba(7, 62, 87, 0.2) 0px 15px, rgba(7, 62, 87, 0.1) 0px 20px, rgba(7, 62, 87, 0.05) 0px 25px;
+        }
+    }
+}
+
+.selected {
+    background: radial-gradient(circle, rgba(196, 234, 252, 0.603) 2%, rgba(9, 30, 39, 0.322) 100%);
+    color: black;
+    font-size: 22px;
+    border: none;
+    box-shadow: rgba(7, 62, 87, 0.4) 0px 5px, rgba(7, 62, 87, 0.3) 0px 10px, rgba(7, 62, 87, 0.2) 0px 15px, rgba(7, 62, 87, 0.1) 0px 20px, rgba(7, 62, 87, 0.05) 0px 25px;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(500px);
+    transition: 0.4s;
+    transition-delay: 0.1s;
+
+    div {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        color: white;
+
+        img {
+        height: 400px;
+        width: 600px;
+        object-fit: cover;
+        box-shadow: rgba(7, 62, 87, 0.575) 0px 19px 38px, rgba(7, 62, 87, 0.575) 0px 15px 12px;
+        border-radius: 5px;
+        margin: 10px 40px;
+        }
+
+        p {
+        text-align: justify;
+        margin: 10px 40px;
+        background-color: rgba(7, 62, 87, 0.562);
+        padding: 10px;
+        }
+    }
+}
+
+.tabAnimation{
+    transform: translateY(0);
+    opacity: 1;
+}
+
